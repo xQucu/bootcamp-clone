@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.cardOutline {
+  @apply border border-dark shadow-BottomShadow;
+}
+
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 @layer base {
   h1 {
