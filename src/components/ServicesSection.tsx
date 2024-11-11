@@ -55,7 +55,7 @@ const ServicesSection = () => {
         At our digital marketing agency, we offer a range of services to help
         businesses grow and succeed online. These services include:
       </Header>
-      <div className="flex justify-center lg:justify-between flex-wrap  gap-[2.5rem]">
+      <div className="flex justify-center xl:justify-between flex-wrap  gap-[2.5rem]">
         {servicesCards.map(
           ({ titleLine1, titleLine2, image, theme }, index) => (
             <ServiceCard

@@ -15,7 +15,7 @@ const ServiceCard = ({
 }: IServiceCard) => {
   return (
     <div
-      className={`flex justify-between p-[3.125rem] w-[37.5rem] rounded-[2.8125rem] cardOutline ${background[theme]}`}>
+      className={`flex justify-center sm:justify-between p-[3.125rem] flex-wrap-reverse w-[37.5rem] cardOutline ${background[theme]}`}>
       <div className="flex flex-col justify-between">
         <div>
           <h3
@@ -32,14 +32,16 @@ const ServiceCard = ({
           </h3>
         </div>
         <button
-          className={`flex gap-[0.9375rem] min-w-max items-center ${
+          className={`flex gap-[0.9375rem] min-w-max items-center pt-3 ${
             theme === 'dark' ? 'text-white' : ''
           }`}>
           <ArrowIcon color={theme === 'dark' ? 'lighter' : 'darker'} />
           Learn more
         </button>
       </div>
-      <img src={image} alt="image" />
+      <div className='flex-shrink flex pb-3'>
+        <img src={image} alt="image" />
+      </div>
     </div>
   );
 };
