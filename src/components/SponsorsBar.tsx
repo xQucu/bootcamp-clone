@@ -16,28 +16,18 @@ const companyLogos = [
 
 const SponsorsBar = () => {
   return (
-    <div className="w-full overflow-hidden flex">
-      <div className="flex w-full justify-center">
-        <div className="flex flex-wrap justify-between 1animate-infiniteSponsors grayscale w-full">
+    <div className="w-full  flex overflow-hidden">
+      <div className="flex w-full ">
+        <div className="flex flex-wrap justify-between animate-infiniteSponsors xl:animate-none grayscale w-full min-w-[77.5rem] px-7">
           {companyLogos.map((logo, i) => (
-            <img
-              src={logo}
-              key={i}
-              alt="logo of sponsor"
-            />
+            <img src={logo} key={i} alt="logo of sponsor" />
           ))}
         </div>
-        {/* <div className="flex justify-between animate-infiniteSponsors grayscale min-w-max w-[77.5rem]">
+        <div className="flex flex-wrap justify-between animate-infiniteSponsors xl:animate-none xl:hidden grayscale w-full min-w-[77.5rem] px-7">
           {companyLogos.map((logo, i) => (
-            <img
-              src={logo}
-              key={i}
-              alt="logo of sponsor"
-              className="mx-[3rem]"
-            />
+            <img src={logo} key={i} alt="logo of sponsor" />
           ))}
-        </div> */}
-       
+        </div>
       </div>
     </div>
   );
