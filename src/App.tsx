@@ -2,6 +2,7 @@ import FreeProposalSection from './components/FreeProposalSection';
 import HeroSection from './components/HeroSection';
 import NavBar from './components/NavBar';
 import ServicesSection from './components/ServicesSection';
+import WorkingProcessSection from './components/WorkingProcessSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <HeroSection />
         <ServicesSection />
         <FreeProposalSection />
+        <WorkingProcessSection />
       </div>
     </>
   );
