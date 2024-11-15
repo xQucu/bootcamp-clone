@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './Header';
 import RadioButton from './RadioButton';
+import Button from './Button';
 
 interface IFormData {
   action: 'SayHi' | 'GetQuote';
@@ -102,12 +103,7 @@ const ContactSection = () => {
               value={formData.message}
             />
           </div>
-
-          <button
-            type="submit"
-            className="text-white bg-dark py-5 px-[2.1875rem] rounded-[0.875rem] leading-7">
-            Send Message
-          </button>
+            <Button variant="dark">Send Message</Button>
         </form>
       </div>
     </div>

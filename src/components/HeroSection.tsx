@@ -1,4 +1,5 @@
 import HeroIllustration from '../assets/HeroIllustration.svg';
+import Button from './Button';
 const HeroSection = () => {
   return (
     <div className="flex flex-wrap-reverse lg:flex-nowrap pt-[8rem] justify-center lg:justify-between">
@@ -9,9 +10,7 @@ const HeroSection = () => {
           through a range of services including SEO, PPC, social media
           marketing, and content creation.
         </p>
-        <button className="bg-dark rounded-[0.625rem] w-fit py-5 px-[2.1875rem] text-white">
-          Book a consultation
-        </button>
+        <Button variant="dark" className='w-fit'>Book a consultation</Button>
       </div>
       <div className="flex justify-end w-fit">
         <img src={HeroIllustration} alt="Hero section" />

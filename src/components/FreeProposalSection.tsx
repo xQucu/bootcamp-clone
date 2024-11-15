@@ -1,4 +1,5 @@
 import doodle from '../assets/ctaDoodle.svg';
+import Button from './Button';
 
 const FreeProposalSection = () => {
   return (
@@ -9,9 +10,7 @@ const FreeProposalSection = () => {
           Contact us today to learn more about how our digital marketing
           services can help your business grow and succeed online.
         </p>
-        <button className="py-[1.15rem] px-[2.1875rem] bg-dark text-white rounded-[0.875rem]">
-          Get your free proposal
-        </button>
+        <Button variant="dark">Get your free proposal</Button>
       </div>
       <div>
         <img src={doodle} alt="doodle" />

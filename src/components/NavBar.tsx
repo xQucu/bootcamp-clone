@@ -1,6 +1,7 @@
 import { MenuIcon, XIcon } from 'lucide-react';
 import Logo from './Logo';
 import { useEffect, useState } from 'react';
+import Button from './Button';
 
 const NavBar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
@@ -51,9 +52,9 @@ const NavBar = () => {
         <button>Use Cases</button>
         <button>Pricing</button>
         <button>Blog</button>
-        <button className="flex min-w-max py-5 px-[2.1875rem] border rounded-[0.875rem] border-dark">
+        <Button variant='outline'>
           Request a quote
-        </button>
+        </Button>
       </div>
     </nav>
   );
