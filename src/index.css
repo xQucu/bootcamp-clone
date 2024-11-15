@@ -13,7 +13,14 @@
     overflow-x: hidden;
   }
 }
-
+@layer utilities {
+  .bg-contactFormGradient {
+    background-image: linear-gradient(90deg, #f3f3f300, #f3f3f3a6), url('FormIllustration.svg');
+  }
+  .bg-contactFormPure {
+    background-image: url('FormIllustration.svg');
+  }
+}
 @layer base {
   h1 {
     font-size: 3.75rem;

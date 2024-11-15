@@ -6,11 +6,6 @@ export default {
       screens: {
         extraSm: '425px',
       },
-      backgroundImage: {
-        contactFormGradient:
-          'linear-gradient(90deg, #f3f3f300, #f3f3f3a6), url(FormIllustration.svg)',
-        contactFormPure: 'url(FormIllustration.svg)',
-      },
       boxShadow: {
         BottomShadow: '0 5px 0 0 #191A23',
       },
