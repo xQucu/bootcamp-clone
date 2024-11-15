@@ -1,3 +1,4 @@
+import ContactSection from './components/ContactSection';
 import FreeProposalSection from './components/FreeProposalSection';
 import HeroSection from './components/HeroSection';
 import NavBar from './components/NavBar';
@@ -15,6 +16,7 @@ function App() {
         <ServicesSection />
         <FreeProposalSection />
         <WorkingProcessSection />
+        <ContactSection />
       </div>
     </>
   );

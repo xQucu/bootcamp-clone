@@ -1,11 +1,12 @@
-import { fromJSON } from 'postcss';
-import { transform } from 'typescript';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        contactFormGradient:'linear-gradient(90deg, #f3f3f300, #f3f3f3a6), url(src/assets/FormIllustration.svg)',
+        contactFormPure:'url(src/assets/FormIllustration.svg)',
+      },
       boxShadow: {
         BottomShadow: '0 5px 0 0 #191A23',
       },
@@ -16,7 +17,7 @@ export default {
         },
       },
       animation: {
-        infiniteSponsors: 'infiniteSponsors 30s linear infinite ',
+        infiniteSponsors: 'infiniteSponsors 30s linear infinite',
       },
       colors: {
         dark: '#191A23',
@@ -24,7 +25,7 @@ export default {
         light: '#F3F3F3',
       },
       fontFamily: {
-        sans: 'Space Grotesk',
+        sans: ['Space Grotesk', 'sans-serif'],
       },
     },
   },
