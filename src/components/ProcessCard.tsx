@@ -21,7 +21,7 @@ const Card = ({ children, title, number, isOpened, onToggle }: IProps) => {
           <span className="text-2xl md:text-6xl">{no}</span>
           <span className="text-xl md:text-3xl">{title}</span>
         </div>
-        <div onClick={onToggle} className="size-10 md:size-[3.625rem] shrink-0">
+        <button onClick={onToggle} className="size-10 md:size-[3.625rem] shrink-0">
           {isOpened ? (
             <img src={minusIcon} alt="minus icon" />
           ) : (
@@ -31,7 +31,7 @@ const Card = ({ children, title, number, isOpened, onToggle }: IProps) => {
               className="w-[3.625rem] h-[3.625rem]"
             />
           )}
-        </div>
+        </button>
       </div>
       {isOpened && (
         <div className="pt-[1.87rem]">
