@@ -3,9 +3,13 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        extraSm: '425px',
+      },
       backgroundImage: {
-        contactFormGradient:'linear-gradient(90deg, #f3f3f300, #f3f3f3a6), url(src/assets/FormIllustration.svg)',
-        contactFormPure:'url(src/assets/FormIllustration.svg)',
+        contactFormGradient:
+          'linear-gradient(90deg, #f3f3f300, #f3f3f3a6), url(src/assets/FormIllustration.svg)',
+        contactFormPure: 'url(src/assets/FormIllustration.svg)',
       },
       boxShadow: {
         BottomShadow: '0 5px 0 0 #191A23',
