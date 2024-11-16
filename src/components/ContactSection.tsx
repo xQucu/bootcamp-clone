@@ -44,7 +44,6 @@ const ContactSection = () => {
           className="flex flex-col gap-[2.5rem] w-full max-w-[34.75rem]">
           <div className="flex gap-[2.1875rem] items-center">
             <div>
-              {/* //todo create button component with 2 colors and outline mode*/}
               <RadioButton
                 isActive={formData.action === 'SayHi'}
                 onSelect={() =>
