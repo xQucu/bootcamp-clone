@@ -22,8 +22,9 @@ const ContactSection = () => {
     e.preventDefault();
     console.log(formData);
     // do sth with the data
-    // and show the response
     // ...
+    // and show the response
+
     // clear the form
     setFormData({
       action: 'SayHi',
@@ -37,7 +38,7 @@ const ContactSection = () => {
       <Header title="Contact Us">
         Connect with Us: Let's Discuss Your Digital Marketing Needs
       </Header>
-      <div className="px-0 extraSm:px-[3.75rem] sm:px-[6.25rem] pt-[3.75rem] pb-[5rem] flex justify-between bg-light rounded-[2.8125rem] lg:bg-contactFormPure bg-contactFormGradient bg-no-repeat bg-right ">
+      <div className="px-3 extraSm:px-[3.75rem] sm:px-[6.25rem] pt-[3.75rem] pb-[5rem] flex justify-between bg-light rounded-[2.8125rem] lg:bg-contactFormPure bg-contactFormGradient bg-no-repeat bg-right ">
         <form
           onSubmit={handleForm}
           className="flex flex-col gap-[2.5rem] w-full max-w-[34.75rem]">

@@ -6,7 +6,7 @@ import Logo from './Logo';
 
 const Footer = () => {
   return (
-    <div className="flex flex-col rounded-t-[2.8125rem] gap-[3.125rem] bg-dark pt-[3.44rem] pb-[3.12rem] px-[3.75rem] text-white">
+    <div className="flex flex-col rounded-t-[2.8125rem] gap-[3.125rem] bg-dark pt-[3.44rem] pb-[3.12rem] px-4 extraSm:px-[3.75rem] text-white">
       <div className="flex flex-col gap-[4.125rem]">
         <div className="flex gap-6 justify-between flex-wrap">
           <Logo color="white" />

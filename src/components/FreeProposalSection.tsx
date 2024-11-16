@@ -13,7 +13,7 @@ const FreeProposalSection = () => {
         <Button variant="dark">Get your free proposal</Button>
       </div>
       <div>
-        <img src={doodle} alt="doodle" />
+        <img src={doodle} alt="doodle" className='xl:pr-[4.6875rem]' />
       </div>
     </div>
   );
