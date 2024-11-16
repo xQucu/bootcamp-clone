@@ -1,7 +1,7 @@
 import { MenuIcon, XIcon } from 'lucide-react';
-import Logo from './Logo';
 import { useEffect, useState } from 'react';
 import Button from './Button';
+import Logo from './Logo';
 
 const NavBar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
@@ -32,7 +32,7 @@ const NavBar = () => {
     <nav className="fixed backdrop-blur-3xl bg-opacity-50 xl:px-[6.25rem] top-0 left-0 right-0 pb-1 bg-white flex pt-4 flex-col lg:flex-row max-w-screen justify-between items-center px-2">
       <div className="flex justify-between items-center w-full">
         <div className="ps-2">
-          <Logo />
+          <Logo color="black" className="w-[13.7rem]" />
         </div>
         <div className="lg:hidden">
           {isMenuToggled ? (
@@ -52,9 +52,7 @@ const NavBar = () => {
         <button>Use Cases</button>
         <button>Pricing</button>
         <button>Blog</button>
-        <Button variant='outline'>
-          Request a quote
-        </Button>
+        <Button variant="outline">Request a quote</Button>
       </div>
     </nav>
   );

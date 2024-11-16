@@ -79,6 +79,7 @@ const ContactSection = () => {
           <div className="flex flex-col gap-[0.3125rem]">
             <label htmlFor="Email">Email*</label>
             <input
+              required
               type="email"
               name="Email"
               id="Email"
@@ -93,6 +94,7 @@ const ContactSection = () => {
           <div className="flex flex-col gap-[0.3125rem]">
             <label htmlFor="Message">Message*</label>
             <textarea
+              required
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, message: e.target.value }))
               }
@@ -103,7 +105,7 @@ const ContactSection = () => {
               value={formData.message}
             />
           </div>
-            <Button variant="dark">Send Message</Button>
+          <Button variant="dark">Send Message</Button>
         </form>
       </div>
     </div>
