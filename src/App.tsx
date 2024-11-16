@@ -10,7 +10,7 @@ import WorkingProcessSection from './components/WorkingProcessSection';
 function App() {
   return (
     <>
-      <div className="container mx-auto w-screen flex flex-col justify-center gap-[4.375rem] pt-[1rem] px-2">
+      <div className="container mx-auto flex flex-col justify-center gap-[4.375rem] pt-[1rem] px-2">
         <NavBar />
         <HeroSection />
         <SponsorsBar />

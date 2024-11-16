@@ -13,15 +13,16 @@ const Card = ({ children, title, number, isOpened, onToggle }: IProps) => {
   const no = String(number + 1).padStart(2, '0');
   return (
     <div
-      className={`cardOutline w-full py-[2.5625rem] px-5 sm:px-[3.75rem] ${
+      className={`cardOutline w-full py-[2.5625rem] px-5 sm:px-[3.75rem] hover:cursor-pointer ${
         isOpened ? 'bg-green' : 'bg-light'
-      }`}>
+      }`}
+      onClick={onToggle}>
       <div className="flex justify-between items-center ">
         <div className="flex gap-[1.5625rem] items-center font-medium ">
           <span className="text-2xl md:text-6xl">{no}</span>
           <span className="text-xl md:text-3xl">{title}</span>
         </div>
-        <button onClick={onToggle} className="size-10 md:size-[3.625rem] shrink-0">
+        <button className="size-10 md:size-[3.625rem] shrink-0">
           {isOpened ? (
             <img src={minusIcon} alt="minus icon" />
           ) : (

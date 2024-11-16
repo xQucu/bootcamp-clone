@@ -29,7 +29,7 @@ const NavBar = () => {
     setIsMenuToggled((prevState) => !prevState);
   };
   return (
-    <nav className="fixed backdrop-blur-3xl bg-opacity-50 xl:px-[6.25rem] top-0 left-0 right-0 pb-1 bg-white flex pt-4 flex-col lg:flex-row max-w-screen justify-between items-center px-2">
+    <nav className="fixed z-10 backdrop-blur-3xl bg-opacity-50 xl:px-[6.25rem] top-0 left-0 right-0 pb-1 bg-white flex pt-4 flex-col lg:flex-row max-w-screen justify-between items-center px-2">
       <div className="flex justify-between items-center w-full">
         <div className="ps-2">
           <Logo color="black" className="w-[13.7rem]" />
