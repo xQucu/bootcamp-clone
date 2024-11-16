@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Card from './ProcessCard';
+import Header from './Header';
 
 const process: { title: string; description: string }[] = [
   {
@@ -38,6 +39,9 @@ const WorkingProcessSection = () => {
   const [openID, setOpenID] = useState<number>(0);
   return (
     <div className="flex flex-col items-start gap-[1.875rem]">
+      <Header title="Our Working Process">
+        Step-by-Step Guide to Achieving Your Business Goals
+      </Header>
       {process.map((step, index) => (
         <Card
           key={index}
